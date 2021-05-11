@@ -124,4 +124,3 @@ function igual(){
     lista = [];
 }
 
-const hola
