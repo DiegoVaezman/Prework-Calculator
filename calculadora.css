@@ -1,0 +1,164 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 29, 28);
+}
+
+h1{
+    font-size: 25px;
+    color: rgb(255, 249, 213);
+    text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
+}
+
+.calculadora{
+    background-image: linear-gradient(to bottom, #f5ed87, #2079b0);
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+    border: #2079b0 4px outset;
+    /* display: grid;
+    grid-template-columns: 10;
+    grid-template-rows: 40; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    color: rgb(4, 4, 145);
+    margin: 5px;
+    border: #f0e662 2px outset;
+    background: linear-gradient(to bottom, #ffffff, rgb(158, 158, 158));
+    outline:none;
+}
+.boton:hover{
+    background: linear-gradient(to bottom, #ffffff,#f0e662);
+}
+
+.boton1{
+    border: #1ca2f5 2px outset;
+    background: linear-gradient(to bottom, #ffffff, rgb(158, 158, 158));
+}
+.boton1:hover{
+    background: linear-gradient(to bottom, #ffffff, #1ca2f5);
+}
+
+.botonigual{
+    align-self: center;
+    border-radius: 40px;
+    width: 90%;
+    height: 60px;
+    font-size: 40px;
+    color: rgb(4, 4, 145);
+    border: gold 2px outset;
+    background: linear-gradient(to bottom, #ffffff,rgb(158, 158, 158));
+    outline:none;
+}
+.botonigual:hover{
+    background: linear-gradient(to bottom, #ffffff,#ddd126);
+}
+
+.botonclean{
+    border: rgb(255, 72, 0) 2px outset;
+    background: linear-gradient(to bottom, #ffffff, rgb(252, 168, 130));
+}
+.botonclean:hover{
+    background: linear-gradient(to bottom, #ffffff, rgb(248, 112, 49));
+}
+
+.pantallaGeneral {
+    border: gold 7px inset;
+    background: linear-gradient(to bottom, rgb(218, 248, 253), rgb(153, 181, 187));
+    height: 12%;
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.operacion {
+    height: 30%;
+    text-align: left;
+    overflow: hidden;
+}
+.pantalla{
+    height: 70%;
+    font-size: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.teclado{
+    width: 85%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.fila-teclado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* .botope{
+    width: 60px;
+    height: 250px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 40px;
+} */
+
+/* .botnum{
+    margin-right: 20px;
+    margin-top: 40px;
+} */
+
+@media (max-width: 980px){
+    .calculadora {
+        width: 100vw;
+        height: 100vh;
+        border: #2079b0 10px outset;
+    }
+    h1{
+        font-size: 60px;
+        text-shadow: -4px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
+    }
+    .pantallaGeneral{
+        border: gold 15px inset;
+    }
+    .operacion {
+        font-size: 50px;
+    }
+    .pantalla{
+        font-size: 120px;
+    }
+    .boton{
+        width: 180px;
+        height: 180px;
+        font-size: 80px;
+        border: #f0e662 6px outset;
+    }
+
+    .boton1{
+        border: #1ca2f5 6px outset;
+    }
+    .botonigual{
+        border-radius: 60px;
+        width: 90%;
+        height: 120px;
+        font-size: 100px;
+        border: gold 6px outset;
+    }
+    .botonclean{
+        border: rgb(255, 72, 0) 6px outset;
+    }
+}
+
+
+
