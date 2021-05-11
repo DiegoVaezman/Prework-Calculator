@@ -123,3 +123,5 @@ function igual(){
     operacion.innerHTML = pantalla.innerHTML;
     lista = [];
 }
+
+const hola
